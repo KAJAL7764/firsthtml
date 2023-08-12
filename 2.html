@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+body{
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+ .flame {
+      width: 50px;
+      height: 70px;
+      background-color: #ffbb00;
+      border-radius: 50%;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      animation: flicker 1s infinite;
+      justify-content: center;
+      align-items: center;
+    }
+    .candle {
+      width: 50px;
+      height: 300px;
+      background-color: white;
+      border-radius: 10px;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    @keyframes flicker {
+      0%, 70%, 100% {
+        opacity: 1;
+      }
+      
+      10%, 20%, 30%, 40%, 50%, 60% {
+        opacity: 0.3;
+      }
+      
+      80% {
+        opacity: 0.8;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="candle">
+    <div class="flame">
+    </div>
+  </div>
+</body>
+</html>
